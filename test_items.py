@@ -17,5 +17,8 @@ def test_presence_of_btn_to_basket(browser):
     time.sleep(30)
 
     add_to_basket_button = WebDriverWait(browser, 15).until(EC.presence_of_element_located(ADD_TO_BASKET))
+    # browser.execute_script("return arguments[0].scrollIntoView(true);", add_to_basket_button)
+
+    # time.sleep(5)
 
     assert add_to_basket_button is not None, "Button is not visible"
