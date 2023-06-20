@@ -11,6 +11,14 @@ class ProductPage(BasePage):
         self.check_name_product_added_to_cart()
         self.check_price_product_added_to_cart()
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_dissapear_of_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is disappeared"
+
     def should_be_add_to_cart_btn(self):
         assert self.is_element_present(*ProductPageLocators.ADD_TO_CART_BUTTON)
 
