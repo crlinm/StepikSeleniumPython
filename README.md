@@ -7,4 +7,4 @@
 1. [x] Знакомимся с Selenium 
 2. [x] Полезные методы Selenium
 3. [x] Тестовые фреймворки
-4. [ ] Применение паттерна Page Object Model
+4. [x] Применение паттерна Page Object Model
